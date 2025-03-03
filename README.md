@@ -45,10 +45,10 @@ A virtual machine operates through software called a **Hypervisor - Virtual Mach
 - **Input/Output Devices** → Keyboards, mice, monitors, printers, etc.
 
 ### Role of the Hypervisor
-The hypervisor abstracts and distributes hardware resources among different virtual machines (VMs), enabling them to function independently. There are two main types:
+⭐ The hypervisor abstracts and **distributes hardware resources among different virtual machines** (VMs), enabling them to function independently. There are two main types:
 
-- **Bare-Metal Hypervisors** → Run directly on hardware without a host OS, making them more efficient and secure since they access physical resources directly. Examples: Microsoft Hyper-V, KVM.
-- **Hosted Hypervisors** → Installed as software on an existing OS, easier to configure but slightly less efficient due to additional abstraction. Examples: VMware Workstation, Oracle VirtualBox.
+- **Bare-Metal Hypervisors** → Run directly on hardware without a host OS, making them *more efficient and secure since they access physical resources directly*. Examples: Microsoft Hyper-V, KVM.
+- **Hosted Hypervisors** → Installed as software on an existing OS, *easier to configure but slightly less efficient due to additional abstraction*. Examples: VMware Workstation, Oracle VirtualBox.
 
 A hypervisor is responsible for:
 - Allocating physical resources across multiple virtual machines
@@ -58,4 +58,65 @@ A hypervisor is responsible for:
 
 ### Purpose of Virtual Machines
 Virtual machines allow multiple operating systems to run on a single physical machine while keeping each environment completely separate and secure. This technology is essential for optimizing hardware usage, testing software in a secure environment, and managing system backups efficiently. Virtualization also enables seamless migration of virtual environments across different physical computers, ensuring **flexibility and operational continuity**.
+
+# Linux System Administration Guide
+
+## 1. Logical Volume Management (LVM)
+
+LVM is a storage management system that adds an abstraction layer above physical devices, allowing more flexible disk space management than traditional partitions.
+
+### LVM Hierarchical Structure
+
+LVM uses a three-level hierarchical structure:
+
+1. **Physical Volumes (PV)**
+   - Physical storage devices like hard drives or SSDs
+   - Can be entire partitions or whole disks
+   - Initialized with the `pvcreate` command
+
+2. **Volume Groups (VG)**
+   - Groups of physical volumes aggregated into a single storage space
+   - Allow combining multiple disks into one storage pool
+   - Created with the `vgcreate` command
+
+3. **Logical Volumes (LV)**
+   - "Virtual partitions" within a Volume Group
+   - Can be resized dynamically without system restart
+   - Created with the `lvcreate` command
+
+### LVM Advantages
+- ✓ **Flexibility**: Resize logical volumes without worrying about partition structure
+- ✓ **Snapshot**: Create backups without interrupting system operation
+- ✓ **Dynamic Management**: Add new disks without redesigning the partition table
+
+## 2. LUKS (Linux Unified Key Setup)
+
+LUKS is the encryption standard for Linux disks, protecting data from unauthorized access. Unlike other encryption methods, LUKS offers centralized key management and is compatible with various security tools.
+
+VirtualBox offers disk encryption through three simple steps:
+1. **Activation**: Virtual disk settings → Enable encryption → Set password
+2. **Usage**: When starting the VM → Enter password → Access disk
+3. **Operation**: After unlocking → Transparent usage → Automatic encryption/decryption
+
+This mechanism protects VM data even if someone physically accesses the virtual disk files.
+
+## 3. Linux Directory Hierarchy
+
+Linux follows the Filesystem Hierarchy Standard (FHS), which defines the arrangement of major directories:
+
+- 📂 **/**: Root directory from which all other directories branch
+  - Contains essential files for system boot and operation
+
+- 📂 **/home**: Contains users' personal directories
+  - Each user has their own subdirectory (`/home/username`)
+
+- 📂 **/var**: Contains variable data like system logs, cache, and print spools
+  - For example, `/var/log` stores system event logs
+
+- 📂 **/tmp**: Temporary area for files created by applications
+  - Automatically cleared on each reboot
+
+- 📂 **/srv**: Contains data used by network services, like websites served by a web server
+
+- 📂 **swap**: Disk space used as virtual memory to support RAM when it's full
 
