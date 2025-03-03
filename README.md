@@ -1,6 +1,9 @@
 # Born to be Root 🚀  
 
 Welcome to *Born to be Root* – a beginner-friendly guide to mastering Linux system administration. Whether you're just starting out or looking to sharpen your skills, this repository will help you navigate the Linux environment with confidence.  
+![memeaboutvirtualmachines](https://github.com/user-attachments/assets/bf8152da-f83f-493f-83f5-f680d08aba84)
+*Image from iq.opengenus.org/virtualization/*
+
 
 ## What You'll Learn  
 - **Linux Fundamentals** – File systems, permissions, processes  
