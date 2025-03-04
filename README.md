@@ -42,7 +42,7 @@ No prior experience? No problem! *Born to be Root* is designed to be beginner-fr
 ## 1) Understanding Virtual Machines
 A virtual machine (VM) is a simulated computer that runs within a physical computer. It functions as an isolated system, complete with its own operating system, memory, storage, and processing resources, all managed independently from the host system. In simpler terms, it's an emulation of a computer system that enables an operating system ('guest') to run as an application within another operating system ('host').
 
-### How a Virtual Machine Works
+### How a Virtual Machine Works 🖥️
 A virtual machine operates through software called a **Hypervisor - Virtual Machine Monitor (VMM)**, which manages and coordinates the following key components:
 
 - **CPU (Central Processing Unit)** → The "brain" of the computer. It processes calculations and program instructions, coordinating the operation of all other parts, such as memory, storage, and peripherals.
@@ -58,8 +58,8 @@ A virtual machine operates through software called a **Hypervisor - Virtual Mach
 - **Network Card** → Allows the computer to connect to the Internet or a local network via Ethernet cable or wireless.
 - **Input/Output Devices** → Keyboards, mice, monitors, printers, etc.
 
-### Role of the Hypervisor
-⭐ The hypervisor abstracts and **distributes hardware resources among different virtual machines** (VMs), enabling them to function independently. There are two main types:
+### Role of the Hypervisor ⭐
+The hypervisor abstracts and **distributes hardware resources among different virtual machines** (VMs), enabling them to function independently. There are two main types:
 
 - **Bare-Metal Hypervisors** → Run directly on hardware without a host OS, making them *more efficient and secure since they access physical resources directly*. Examples: Microsoft Hyper-V, KVM.
 - **Hosted Hypervisors** → Installed as software on an existing OS, *easier to configure but slightly less efficient due to additional abstraction*. Examples: VMware Workstation, Oracle VirtualBox.
