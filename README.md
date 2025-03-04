@@ -22,7 +22,8 @@ No prior experience? No problem! *Born to be Root* is designed to be beginner-fr
 2) Debian vs CentOS and Rocky Linux
    - Why choose Debian for your VM setup?
    - How to install Debian on a Virtual Machine
-3,4) Using VirtualBox + Configuring Your Virtual Machine (VM)
+3) Using VirtualBox
+4) Configuring Your Virtual Machine (VM)
 5) Understanding Partitions
    - What are partitions?
    - Different types of partitions (Primary, Extended, Logical)
