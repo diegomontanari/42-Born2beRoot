@@ -18,36 +18,36 @@ No prior experience? No problem! *Born to be Root* is designed to be beginner-fr
 
 ## Key Points We Will Cover In This Guide 🖥️
 
-1. Understanding Virtual Machines
+1) Understanding Virtual Machines
 
-2. Debian vs Rocky Linux
+2) Debian vs Rocky Linux
    - Why choose Debian for your VM setup?
    - How to install Debian on a Virtual Machine
 
-3. Opening VirtualBox
+3) Using VirtualBox
 
-4. Configuring Your Virtual Machine (VM)
+4) Configuring Your Virtual Machine (VM)
 
-5. Understanding Partitions
+5) Understanding Partitions
    - What are partitions?
    - Different types of partitions (Primary, Extended, Logical)
    - How partitions are useful in VM setup
 
-   6. Mount Points Explained
+   -) Mount Points Explained
 
-7. Starting the Virtual Machine
+6) Starting the Virtual Machine
    - Installing Vim and Sudo
    - Managing users and user groups
 
-8. Writing a System Info Script
+7) Writing a System Info Script
 
-9. Understanding and Using Crontab
+8) Understanding and Using Crontab
 
 # Let's start! 🚀
 
 ![3e494f8437e6b23acafecb608036edd7](https://github.com/user-attachments/assets/d7fb338f-248d-4a26-8e2b-424cf46c1434)
 
-## Virtual Machines
+## 1) Understanding Virtual Machines
 A virtual machine (VM) is a simulated computer running inside a physical computer. It operates as an isolated system with its own operating system, memory, storage, and processing resources, all managed independently from the host system.
 
 ### How a Virtual Machine Works
@@ -143,7 +143,7 @@ Linux follows the Filesystem Hierarchy Standard (FHS), which defines the arrange
 - 📂 **swap**: Disk space used as virtual memory to support RAM when it's full
 
 
-## 2. What are Partitions?
+## 5) Understanding Partitions
 
 A partition is a logical subdivision of a physical disk. Imagine your hard drive as one big room: if you want to organize it better, you can divide it with walls into multiple rooms (partitions). Each partition can be used for different purposes (operating system, data, swap, etc.).
 
