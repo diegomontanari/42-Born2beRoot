@@ -22,8 +22,7 @@ No prior experience? No problem! *Born to be Root* is designed to be beginner-fr
 2) Debian vs CentOS and Rocky Linux
    - Why choose Debian for your VM setup?
    - How to install Debian on a Virtual Machine
-3) Using VirtualBox
-4) Configuring Your Virtual Machine (VM)
+3-4) Using VirtualBox + Configuring Your Virtual Machine (VM)
 5) Understanding Partitions
    - What are partitions?
    - Different types of partitions (Primary, Extended, Logical)
@@ -105,10 +104,14 @@ We need to choose between **Rocky Linux** and **Debian** for our virtual machine
 
 In summary, **Rocky Linux** is ideal for enterprise-level applications, while **Debian** is a better choice for beginners and general-purpose use, offering a more flexible and user-friendly experience.
 
+## 3-4) Using VirtualBox + Configuring Your Virtual Machine (VM)
 
-
-
-
+VirtualBox is open-source software that allows you to create and manage virtual machines on your computer. It supports a wide range of operating systems and is a popular choice for personal and professional use.
+- Download and Install VirtualBox
+- Creating a New Virtual Machine
+- Configuring the Virtual Hard Disk
+- Setting Up the VM
+*For more detailed instructions on this part, refer to the guide by fcorvaro.*
 
 
 
