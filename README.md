@@ -24,6 +24,8 @@ No prior experience? No problem! *Born to be Root* is designed to be beginner-fr
 
 Let's start! 🚀
 
+![3e494f8437e6b23acafecb608036edd7](https://github.com/user-attachments/assets/d7fb338f-248d-4a26-8e2b-424cf46c1434)
+
 ## Virtual Machines
 A virtual machine (VM) is a simulated computer running inside a physical computer. It operates as an isolated system with its own operating system, memory, storage, and processing resources, all managed independently from the host system.
 
@@ -203,7 +205,7 @@ Let's say you have a 100GB disk. You can divide it as follows:
 
 
 ![virtualize-virtualize-everything](https://github.com/user-attachments/assets/cf8d02c8-68eb-4327-b734-7531975a4f10)
-![3e494f8437e6b23acafecb608036edd7](https://github.com/user-attachments/assets/d7fb338f-248d-4a26-8e2b-424cf46c1434)
+
 
 ![memeaboutvirtualmachines_1_77](https://github.com/user-attachments/assets/637b196a-7039-4a64-8baa-6afbe460a964)
 
