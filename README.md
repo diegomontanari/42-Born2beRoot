@@ -22,6 +22,34 @@ By working through this project, you'll:
 
 No prior experience? No problem! *Born to be Root* is designed to be beginner-friendly, guiding you step by step as you explore the power of Linux. 
 
+# Step-by-Step Guide to Virtual Machine Setup and Linux Basics 🖥️
+
+## 1. Understanding Virtual Machines
+
+## 2. Debian vs Rocky Linux
+   - Why choose Debian for your VM setup?
+   - How to install Debian on a Virtual Machine
+
+## 3. Opening VirtualBox
+
+## 4. Configuring Your Virtual Machine (VM)
+
+## 5. Understanding Partitions
+   - What are partitions?
+   - Different types of partitions (Primary, Extended, Logical)
+   - How partitions are useful in VM setup
+
+   ## 6. Mount Points Explained
+
+## 7. Starting the Virtual Machine
+   - Installing Vim and Sudo
+   - Managing users and user groups
+
+## 8. Writing a System Info Script
+
+## 9. Understanding and Using Crontab
+
+
 Let's start! 🚀
 
 ![3e494f8437e6b23acafecb608036edd7](https://github.com/user-attachments/assets/d7fb338f-248d-4a26-8e2b-424cf46c1434)
