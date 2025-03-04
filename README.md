@@ -22,7 +22,7 @@ By working through this project, you'll:
 
 No prior experience? No problem! *Born to be Root* is designed to be beginner-friendly, guiding you step by step as you explore the power of Linux. 
 
-# Key Points We Will Always Cover 🖥️
+## Key Points We Will Cover In This Guide 🖥️
 
 1. Understanding Virtual Machines
 
