@@ -21,7 +21,8 @@ By working through this project, you'll:
 
 No prior experience? No problem! *Born to be Root* is designed to be beginner-friendly, guiding you step by step as you explore the power of Linux. 
 
-
+Let's start! 🚀
+![memeaboutvirtualmachines_1_77](https://github.com/user-attachments/assets/8da0153e-c367-4ed8-96ba-a06e9edd8533)
 ## Virtual Machines
 A virtual machine (VM) is a simulated computer running inside a physical computer. It operates as an isolated system with its own operating system, memory, storage, and processing resources, all managed independently from the host system.
 
@@ -199,7 +200,7 @@ Let's say you have a 100GB disk. You can divide it as follows:
 
 
 
-![memeaboutvirtualmachines_1_77](https://github.com/user-attachments/assets/8da0153e-c367-4ed8-96ba-a06e9edd8533)
+
 ![virtualize-virtualize-everything](https://github.com/user-attachments/assets/cf8d02c8-68eb-4327-b734-7531975a4f10)
 ![3e494f8437e6b23acafecb608036edd7](https://github.com/user-attachments/assets/d7fb338f-248d-4a26-8e2b-424cf46c1434)
 
