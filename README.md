@@ -40,7 +40,7 @@ No prior experience? No problem! *Born to be Root* is designed to be beginner-fr
 ![3e494f8437e6b23acafecb608036edd7](https://github.com/user-attachments/assets/d7fb338f-248d-4a26-8e2b-424cf46c1434)
 
 ## 1) Understanding Virtual Machines
-A virtual machine (VM) is a simulated computer running inside a physical computer. It operates as an isolated system with its own operating system, memory, storage, and processing resources, all managed independently from the host system.
+A virtual machine (VM) is a simulated computer that runs within a physical computer. It functions as an isolated system, complete with its own operating system, memory, storage, and processing resources, all managed independently from the host system. In simpler terms, it's an emulation of a computer system that enables an operating system ('guest') to run as an application within another operating system ('host').
 
 ### How a Virtual Machine Works
 A virtual machine operates through software called a **Hypervisor - Virtual Machine Monitor (VMM)**, which manages and coordinates the following key components:
@@ -81,13 +81,6 @@ A **virtual machine (VM)** is an emulation of a computer system that allows an o
 - **Isolation**: VMs are isolated from each other and from the host system, improving security and stability.
 - **Portability**: VMs can be easily moved between different host systems, as long as they are compatible with the hypervisor.
 
-## Operating System Choice
-
-The choice between **CentOS** and **Debian** depends on specific needs and preferences.
-
-- **CentOS**: Known for its stability and security, often used in server environments.
-- **Debian**: A versatile and widely used operating system, known for its vast software repository and strong community support.
-
 
 ## 2) Debian vs CentOS and Rocky Linux
 
@@ -117,74 +110,6 @@ In summary, **Rocky Linux** is ideal for enterprise-level applications, while **
 
 
 
-
-
-
-
-
-
-
-
-# Linux System Administration Guide
-
-## 1. Logical Volume Management (LVM)
-
-LVM is a storage management system that adds an abstraction layer above physical devices, allowing more flexible disk space management than traditional partitions.
-
-### LVM Hierarchical Structure
-
-LVM uses a three-level hierarchical structure:
-
-1. **Physical Volumes (PV)**
-   - Physical storage devices like hard drives or SSDs
-   - Can be entire partitions or whole disks
-   - Initialized with the `pvcreate` command
-
-2. **Volume Groups (VG)**
-   - Groups of physical volumes aggregated into a single storage space
-   - Allow combining multiple disks into one storage pool
-   - Created with the `vgcreate` command
-
-3. **Logical Volumes (LV)**
-   - "Virtual partitions" within a Volume Group
-   - Can be resized dynamically without system restart
-   - Created with the `lvcreate` command
-
-### LVM Advantages
-- ✓ **Flexibility**: Resize logical volumes without worrying about partition structure
-- ✓ **Snapshot**: Create backups without interrupting system operation
-- ✓ **Dynamic Management**: Add new disks without redesigning the partition table
-
-## 2. LUKS (Linux Unified Key Setup)
-
-LUKS is the encryption standard for Linux disks, protecting data from unauthorized access. Unlike other encryption methods, LUKS offers centralized key management and is compatible with various security tools.
-
-VirtualBox offers disk encryption through three simple steps:
-1. **Activation**: Virtual disk settings → Enable encryption → Set password
-2. **Usage**: When starting the VM → Enter password → Access disk
-3. **Operation**: After unlocking → Transparent usage → Automatic encryption/decryption
-
-This mechanism protects VM data even if someone physically accesses the virtual disk files.
-
-## 3. Linux Directory Hierarchy
-
-Linux follows the Filesystem Hierarchy Standard (FHS), which defines the arrangement of major directories:
-
-- 📂 **/**: Root directory from which all other directories branch
-  - Contains essential files for system boot and operation
-
-- 📂 **/home**: Contains users' personal directories
-  - Each user has their own subdirectory (`/home/username`)
-
-- 📂 **/var**: Contains variable data like system logs, cache, and print spools
-  - For example, `/var/log` stores system event logs
-
-- 📂 **/tmp**: Temporary area for files created by applications
-  - Automatically cleared on each reboot
-
-- 📂 **/srv**: Contains data used by network services, like websites served by a web server
-
-- 📂 **swap**: Disk space used as virtual memory to support RAM when it's full
 
 
 ## 5) Understanding Partitions
