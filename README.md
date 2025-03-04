@@ -1,8 +1,8 @@
 # Born to be Root 🚀  
 
 Welcome to *Born to be Root* – a beginner-friendly guide to mastering Linux system administration. Whether you're just starting out or looking to sharpen your skills, this repository will help you navigate the Linux environment with confidence.  
-
-
+![memeaboutvirtualmachines_1_77](https://github.com/user-attachments/assets/8da0153e-c367-4ed8-96ba-a06e9edd8533)
+*Image from iq.opengenus.org/virtualization/*
 
 ## What You'll Learn  
 - **Linux Fundamentals** – File systems, permissions, processes  
@@ -22,7 +22,7 @@ By working through this project, you'll:
 No prior experience? No problem! *Born to be Root* is designed to be beginner-friendly, guiding you step by step as you explore the power of Linux. 
 
 Let's start! 🚀
-![memeaboutvirtualmachines_1_77](https://github.com/user-attachments/assets/8da0153e-c367-4ed8-96ba-a06e9edd8533)
+
 ## Virtual Machines
 A virtual machine (VM) is a simulated computer running inside a physical computer. It operates as an isolated system with its own operating system, memory, storage, and processing resources, all managed independently from the host system.
 
@@ -206,4 +206,4 @@ Let's say you have a 100GB disk. You can divide it as follows:
 
 ![memeaboutvirtualmachines_1_77](https://github.com/user-attachments/assets/637b196a-7039-4a64-8baa-6afbe460a964)
 
-*Image from iq.opengenus.org/virtualization/*
+
