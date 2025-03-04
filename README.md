@@ -19,7 +19,7 @@ No prior experience? No problem! *Born to be Root* is designed to be beginner-fr
 ## Key Points We Will Cover In This Guide 🖥️
 
 1) Understanding Virtual Machines
-2) Debian vs Rocky Linux
+2) Debian vs CentOS and Rocky Linux
    - Why choose Debian for your VM setup?
    - How to install Debian on a Virtual Machine
 3) Using VirtualBox
