@@ -73,6 +73,42 @@ A hypervisor is responsible for:
 ### Purpose of Virtual Machines
 Virtual machines allow multiple operating systems to run on a single physical machine while keeping each environment completely separate and secure. This technology is essential for optimizing hardware usage, testing software in a secure environment, and managing system backups efficiently. Virtualization also enables seamless migration of virtual environments across different physical computers, ensuring **flexibility and operational continuity**.
 
+## 2) Debian vs CentOS and Rocky Linux
+
+We need to choose between **Rocky Linux** and **Debian** for our virtual machine.
+
+## Rocky Linux
+- Designed for stability and security, making it a great choice for production environments, especially in enterprise settings.
+- Focuses on long-term support, offering a predictable platform for businesses.
+
+## Debian
+- Known for its flexibility and ease of use, making it an excellent option for beginners.
+- Has a large community with extensive documentation, making it easier to find help and resources.
+- Offers a broad range of packages and is renowned for its stability.
+
+## Comparison
+
+| Feature           | Rocky Linux                      | Debian                      |
+|-------------------|-----------------------------------|-----------------------------|
+| **Stability**     | Enterprise-grade stability        | Strong stability and flexibility |
+| **Ease of Use**   | Best for advanced users and enterprises | More suitable for beginners  |
+| **Package Manager**| `yum`/`dnf`                       | `apt`                        |
+
+In summary, **Rocky Linux** is ideal for enterprise-level applications, while **Debian** is a better choice for beginners and general-purpose use, offering a more flexible and user-friendly experience.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Linux System Administration Guide
 
 ## 1. Logical Volume Management (LVM)
