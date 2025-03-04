@@ -19,28 +19,20 @@ No prior experience? No problem! *Born to be Root* is designed to be beginner-fr
 ## Key Points We Will Cover In This Guide 🖥️
 
 1) Understanding Virtual Machines
-
 2) Debian vs Rocky Linux
    - Why choose Debian for your VM setup?
    - How to install Debian on a Virtual Machine
-
 3) Using VirtualBox
-
 4) Configuring Your Virtual Machine (VM)
-
 5) Understanding Partitions
    - What are partitions?
    - Different types of partitions (Primary, Extended, Logical)
    - How partitions are useful in VM setup
-
-   -) Mount Points Explained
-
+   - Mount Points Explained
 6) Starting the Virtual Machine
    - Installing Vim and Sudo
    - Managing users and user groups
-
 7) Writing a System Info Script
-
 8) Understanding and Using Crontab
 
 # Let's start! 🚀
