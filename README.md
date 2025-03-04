@@ -1,6 +1,9 @@
 # Born to be Root 🚀  
 
 Welcome to *Born to be Root* – a beginner-friendly guide to mastering Linux system administration. Whether you're just starting out or looking to sharpen your skills, this repository will help you navigate the Linux environment with confidence.  
+![memeaboutvirtualmachines_1_77](https://github.com/user-attachments/assets/8da0153e-c367-4ed8-96ba-a06e9edd8533)
+![virtualize-virtualize-everything](https://github.com/user-attachments/assets/cf8d02c8-68eb-4327-b734-7531975a4f10)
+![3e494f8437e6b23acafecb608036edd7](https://github.com/user-attachments/assets/d7fb338f-248d-4a26-8e2b-424cf46c1434)
 
 ![memeaboutvirtualmachines_1_77](https://github.com/user-attachments/assets/637b196a-7039-4a64-8baa-6afbe460a964)
 
@@ -120,3 +123,49 @@ Linux follows the Filesystem Hierarchy Standard (FHS), which defines the arrange
 
 - 📂 **swap**: Disk space used as virtual memory to support RAM when it's full
 
+
+## 2. What are Partitions?
+
+A partition is a logical subdivision of a physical disk. Imagine your hard drive as one big room: if you want to organize it better, you can divide it with walls into multiple rooms (partitions). Each partition can be used for different purposes (operating system, data, swap, etc.).
+
+When you install an operating system, you can choose to:
+
+- Use the entire disk without partitions (not recommended).
+- Split the disk into multiple partitions to separate the operating system, data, and other things.
+
+## 3. Types of Partitions: Primary, Extended, Logical
+
+Disks can be divided into 3 types of partitions:
+
+### Primary (Primary Partition)
+
+- This is the main partition where the operating system is installed.
+- A disk can have up to 4 primary partitions.
+- If you want more than 4 partitions, you need to use an extended partition.
+
+### Extended (Extended Partition)
+
+- Acts as a "container" for other partitions.
+- It can contain multiple logical partitions.
+- A disk can have only one extended partition.
+
+### Logical (Logical Partition)
+
+- These are created inside an extended partition.
+- Linux can manage up to 15 logical partitions on a disk.
+- You can use them to separate the operating system from data.
+
+### Practical Example
+
+Let's say you have a 100GB disk. You can divide it as follows:
+
+- **Primary Partition (30GB)** → Contains Linux (/boot, /root, etc.)
+- **Extended Partition (70GB)** → Contains multiple logical partitions:
+  - **Logical 1 (20GB)** → /home (documents, user files)
+  - **Logical 2 (10GB)** → /swap (virtual memory)
+  - **Logical 3 (40GB)** → /var (logs, cache, etc.)
+
+💡 **Why are partitions used in Born2BeRoot?**
+
+- Separate `/boot` (500MB) to protect the system in case of issues.
+- Create an encrypted logical partition for added security.
