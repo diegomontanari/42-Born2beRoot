@@ -43,7 +43,7 @@ No prior experience? No problem! *Born to be Root* is designed to be beginner-fr
 
 9. Understanding and Using Crontab
 
-Let's start! 🚀
+# Let's start! 🚀
 
 ![3e494f8437e6b23acafecb608036edd7](https://github.com/user-attachments/assets/d7fb338f-248d-4a26-8e2b-424cf46c1434)
 
