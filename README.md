@@ -73,6 +73,22 @@ A hypervisor is responsible for:
 ### Purpose of Virtual Machines
 Virtual machines allow multiple operating systems to run on a single physical machine while keeping each environment completely separate and secure. This technology is essential for optimizing hardware usage, testing software in a secure environment, and managing system backups efficiently. Virtualization also enables seamless migration of virtual environments across different physical computers, ensuring **flexibility and operational continuity**.
 
+A **virtual machine (VM)** is an emulation of a computer system that allows an operating system ("guest") to run as an application inside another operating system ("host").
+
+## Key Components
+
+- **Hypervisor**: A software that creates and manages VMs, allocating resources like CPU, RAM, and storage space.
+- **Isolation**: VMs are isolated from each other and from the host system, improving security and stability.
+- **Portability**: VMs can be easily moved between different host systems, as long as they are compatible with the hypervisor.
+
+## Operating System Choice
+
+The choice between **CentOS** and **Debian** depends on specific needs and preferences.
+
+- **CentOS**: Known for its stability and security, often used in server environments.
+- **Debian**: A versatile and widely used operating system, known for its vast software repository and strong community support.
+
+
 ## 2) Debian vs CentOS and Rocky Linux
 
 We need to choose between **Rocky Linux** and **Debian** for our virtual machine.
