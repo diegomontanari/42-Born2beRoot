@@ -126,7 +126,7 @@ When you install an operating system, you can choose to:
 - Use the entire disk without partitions (not recommended).
 - Split the disk into multiple partitions to separate the operating system, data, and other things.
 
-## 3. Types of Partitions: Primary, Extended, Logical
+## Types of Partitions: Primary, Extended, Logical
 
 Disks can be divided into 3 types of partitions:
 
