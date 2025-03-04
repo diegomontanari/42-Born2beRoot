@@ -220,6 +220,4 @@ Let's say you have a 100GB disk. You can divide it as follows:
 ![virtualize-virtualize-everything](https://github.com/user-attachments/assets/cf8d02c8-68eb-4327-b734-7531975a4f10)
 
 
-![memeaboutvirtualmachines_1_77](https://github.com/user-attachments/assets/637b196a-7039-4a64-8baa-6afbe460a964)
-
 
