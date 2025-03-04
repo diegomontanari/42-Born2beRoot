@@ -111,6 +111,7 @@ VirtualBox is open-source software that allows you to create and manage virtual 
 - Creating a New Virtual Machine
 - Configuring the Virtual Hard Disk
 - Setting Up the VM
+
 *For more detailed instructions on this part, refer to the guide by fcorvaro.*
 
 
