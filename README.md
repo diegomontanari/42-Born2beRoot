@@ -5,12 +5,6 @@ Welcome to *Born to be Root* – a beginner-friendly guide to mastering Linux sy
 ![memeaboutvirtualmachines_1_77](https://github.com/user-attachments/assets/8da0153e-c367-4ed8-96ba-a06e9edd8533)
 *Image from iq.opengenus.org/virtualization/*
 
-## What You'll Learn  
-- **Linux Fundamentals** – File systems, permissions, processes  
-- **System Management** – Users, packages, services  
-- **Networking & Security** – Firewalls, SSH, hardening  
-- **Automation & Scripting** – Bash, cron jobs, task automation  
-
 ## Why Start This Project?  
 If you're new to Linux, this guide will help you build a strong foundation and develop real-world skills. Learning system administration can seem overwhelming at first, but by following structured tutorials and hands-on exercises, you'll gain the confidence to manage your own Linux environment.  
 
