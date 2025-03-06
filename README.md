@@ -8,6 +8,8 @@ For a full guide, I recommend checking out the repository by fcorvaro (I'll leav
 
 Let's get started!
 
+![virtualize-virtualize-everything](https://github.com/user-
+
 # Introduction
 
 Welcome to *Born to be Root* – a beginner-friendly guide to mastering Linux system administration. Whether you're just starting out or looking to sharpen your skills, this repository will help you navigate the Linux environment with confidence.  
@@ -209,7 +211,7 @@ Let's say you have a 100GB disk. You can divide it as follows:
 
 
 
-![virtualize-virtualize-everything](https://github.com/user-attachments/assets/cf8d02c8-68eb-4327-b734-7531975a4f10)
+attachments/assets/cf8d02c8-68eb-4327-b734-7531975a4f10)
 
 
 
