@@ -229,10 +229,27 @@ Note: The command is named `lsblk` because it lists all block devices (such as h
 ```bash
 hostnamectl
 ```
-
 Note: The command is named `hostnamectl` because it is used to control the system's hostname and related settings.
-```
 
+### Create a new user
+```bash
+sudo useradd <username>
+```
+### Create a new group
+```bash
+sudo groupadd <groupname>
+```
+### Assign a user to a group
+```bash
+sudo usermod -aG <groupname> <username>
+```
+Note: The usermod command is used to modify a user's properties. The -aG option appends the user to a group without removing them from other groups (a = append, G = Group).
+
+### Change the hostname
+```bash
+sudo vim /etc/hostname
+```
+Note: After running this command, the new hostname will take effect immediately, but you may need to restart the system or restart the systemd service to fully apply the change.
 
 
 
