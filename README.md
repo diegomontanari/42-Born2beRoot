@@ -47,13 +47,14 @@ No prior experience? No problem! *Born to be Root* is designed to be beginner-fr
    - Managing users and user groups
 7) Writing a System Info Script
 8) Understanding and Using Crontab
+9) Commands you need to learn!
 
 # Let's start! 🚀
 
 ![3e494f8437e6b23acafecb608036edd7](https://github.com/user-attachments/assets/d7fb338f-248d-4a26-8e2b-424cf46c1434)
 
 ## 1) Understanding Virtual Machines
-A virtual machine (VM) is a simulated computer that runs within a physical computer. It functions as an isolated system, complete with its own operating system, memory, storage, and processing resources, all managed independently from the host system. In simpler terms, it's an emulation of a computer system that enables an operating system ('guest') to run as an application within another operating system ('host').
+A virtual machine (VM) is a **simulated computer that runs within a physical computer**. It functions as an isolated system, complete with its own operating system, memory, storage, and processing resources, all managed independently from the host system. In simpler terms, it's an emulation of a computer system that enables an operating system ('guest') to run as an application within another operating system ('host').
 
 ### How a Virtual Machine Works 🖥️
 A virtual machine operates through software called a **Hypervisor - Virtual Machine Monitor (VMM)**, which manages and coordinates the following key components:
@@ -178,6 +179,59 @@ Let's say you have a 100GB disk. You can divide it as follows:
 
 
 
+
+
+## 5) Commands you need to learn!
+
+Let’s complete this guide with a list of essential commands that you will need to successfully complete the project.
+
+### Check that the UFW service is started
+```bash
+sudo systemctl status ufw
+```
+### Check that the SSH service is started
+
+To check if SSH is enabled and running:
+```bash
+sudo systemctl status ssh
+```
+
+### Check what OS is used
+```bash
+cat /etc/os-release
+```
+
+### View information about users
+
+```bash
+cat /etc/passwd
+```
+Note: The `cat /etc/passwd` command displays the contents of the `/etc/passwd` file in Linux and Unix-like systems. This file contains information about system users, such as the username, password (in encrypted form), user ID (UID), group ID (GID), the user's full name, home directory, and default shell.``
+
+### Verify user group membership
+```bash
+groups <username>
+```
+
+### View all groups in the system
+```bash
+cat /etc/group
+```
+
+### View partitions
+```bash
+lsblk
+```
+
+Note: The command is named `lsblk` because it lists all block devices (such as hard drives and partitions).
+
+### View hostname
+```bash
+hostnamectl
+```
+
+Note: The command is named `hostnamectl` because it is used to control the system's hostname and related settings.
+```
 
 
 
