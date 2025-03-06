@@ -267,9 +267,25 @@ Note: A binary is a compiled program file. It’s the machine code that the CPU 
 ```bash
 sudo usermod -aG sudo <username>
 ```
-
-
-
+### Explain and show the usage of sudo with examples
+```bash
+sudo ls /root # Access a directory restricted to administrators
+sudo apt update # Update packages os Debian/Ubuntu
+sudo reboot # Restart the system
+```
+### Check if the /var/log/sudo/ folder exists
+```bash
+ls -l /var/log/sudo/
+```
+### Check if the file contains the history of commands used with sudo
+```bash
+cat /var/log/sudo/sudo.log # cat stands for "concatenate" and it's used to display the contents of a file
+```
+### Run a command with sudo and verify that the log is updated
+```bash
+sudo ls /root
+catg /var/log/sudo/sudo.log
+```
 
 
 
