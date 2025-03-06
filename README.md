@@ -281,6 +281,8 @@ ls -l /var/log/sudo/
 ```bash
 cat /var/log/sudo/sudo.log # cat stands for "concatenate" and it's used to display the contents of a file
 ```
+Note: the .log extension is only a naming convention to indicate that the file cotains log data. Why? Because Linux doesn't rely on file extensions like Windows does. You could name the file anything (sudo_log , sudo.txt , sudo-data) and it would still function the same way as long as the system is configured to write logs to it.
+
 ### Run a command with sudo and verify that the log is updated
 ```bash
 sudo ls /root
