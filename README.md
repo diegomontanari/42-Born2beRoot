@@ -267,7 +267,7 @@ The configuration of sudo is managed in the /etc/sudoers file, which defines who
 
 Sudo is primarily used to allow non-privileged users to run administrative commands securely without exposing the root password, improving security management. For example, in Ubuntu, users in the admin group can execute commands as root using their own credentials.
 
-### ### Check the version of sudo
+### Check the version of sudo
 ```bash
 sudo --version
 ```
@@ -304,7 +304,7 @@ Note: the .log extension is only a naming convention to indicate that the file c
 sudo ls /root
 catg /var/log/sudo/sudo.log
 ```
-## 
+## UFW Management Commands
 
 
 
