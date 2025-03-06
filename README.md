@@ -181,9 +181,11 @@ Let's say you have a 100GB disk. You can divide it as follows:
 
 
 
-## 5) Commands you need to learn!
+## 9) Commands you need to learn!
 
 Let’s complete this guide with a list of essential commands that you will need to successfully complete the project.
+
+## Basic commands
 
 ### Check that the UFW service is started
 ```bash
@@ -239,6 +241,13 @@ sudo usermod -aG <groupname> <username>
 ```
 Note: The usermod command is used to modify a user's properties. The -aG option appends the user to a group without removing them from other groups (a = append, G = Group).
 
+## Hostname Management Commands
+A hostname is a label or identifier assigned to a device (such as a computer, server, or virtual machine) on a network. It is used to distinguish that device from others within the same network or over the internet. The hostname is a part of the fully qualified domain name (FQDN) and helps in locating the device by humans and other systems.
+
+For example, a device with the hostname myserver can be identified as part of a network, and its hostname can be used in place of an IP address to connect to it.
+
+In addition to identifying the device on a network, the hostname also helps in configuring network services, such as SSH, HTTP, or file sharing.
+
 ### Change the hostname
 ```bash
 sudo vim /etc/hostname
@@ -250,6 +259,13 @@ Note: After running this command, the new hostname will take effect immediately,
 hostnamectl
 ```
 Note: The command is named `hostnamectl` because it is used to control the system's hostname and related settings.
+
+## Sudo Management Commands
+Sudo (short for "super user do") is a program for Unix and Unix-like systems that allows users to execute commands with the privileges of other users, typically the root user, while maintaining their own credentials. Originally, it was designed to allow commands to be run only as the superuser, but later versions enabled running commands as other users as well.
+
+The configuration of sudo is managed in the /etc/sudoers file, which defines who can execute commands, which users they can act as, and what commands they can run. Some systems like macOS and Ubuntu install sudo by default, while others may require installation.
+
+Sudo is primarily used to allow non-privileged users to run administrative commands securely without exposing the root password, improving security management. For example, in Ubuntu, users in the admin group can execute commands as root using their own credentials.
 
 ### ### Check the version of sudo
 ```bash
@@ -288,6 +304,35 @@ Note: the .log extension is only a naming convention to indicate that the file c
 sudo ls /root
 catg /var/log/sudo/sudo.log
 ```
+## 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Sources:
+https://github.com/f-corvaro/42.common_core/tree/main/01-born2beroot
+https://github.com/vhacman/Born2beroot
+https://iq.opengenus.org/virtualization/
+https://it.wikipedia.org/wiki/Sudo
 
 
 
