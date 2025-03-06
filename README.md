@@ -1,4 +1,14 @@
-# Born to be Root 🚀  
+# Born2BeRoot Project Guide 🚀
+
+This README is not a complete guide for completing the Born2BeRoot project. 
+
+In this guide, we will go over everything you need to know to complete the project and provide a step-by-step list of tasks to help you finish it.
+
+For a full guide, I recommend checking out the repository by fcorvaro (I'll leave the link at the bottom in the sources).
+
+Let's get started!
+
+# Introduction
 
 Welcome to *Born to be Root* – a beginner-friendly guide to mastering Linux system administration. Whether you're just starting out or looking to sharpen your skills, this repository will help you navigate the Linux environment with confidence.  
 
