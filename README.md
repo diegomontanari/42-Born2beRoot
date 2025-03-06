@@ -8,7 +8,8 @@ For a full guide, I recommend checking out the repository by fcorvaro (I'll leav
 
 Let's get started!
 
-![virtualize-virtualize-everything](https://github.com/user-
+![virtualize-virtualize-everything](https://github.com/user-attachments/assets/cf8d02c8-68eb-4327-b734-7531975a4f10)
+
 
 # Introduction
 
@@ -208,10 +209,6 @@ Let's say you have a 100GB disk. You can divide it as follows:
 
 
 
-
-
-
-attachments/assets/cf8d02c8-68eb-4327-b734-7531975a4f10)
 
 
 
