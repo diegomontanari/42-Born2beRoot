@@ -225,12 +225,6 @@ lsblk
 
 Note: The command is named `lsblk` because it lists all block devices (such as hard drives and partitions).
 
-### View hostname
-```bash
-hostnamectl
-```
-Note: The command is named `hostnamectl` because it is used to control the system's hostname and related settings.
-
 ### Create a new user
 ```bash
 sudo useradd <username>
@@ -250,6 +244,31 @@ Note: The usermod command is used to modify a user's properties. The -aG option 
 sudo vim /etc/hostname
 ```
 Note: After running this command, the new hostname will take effect immediately, but you may need to restart the system or restart the systemd service to fully apply the change.
+
+### View hostname
+```bash
+hostnamectl
+```
+Note: The command is named `hostnamectl` because it is used to control the system's hostname and related settings.
+
+### ### Check the version of sudo
+```bash
+sudo --version
+```
+Note: In general, in Unix and Linux commands, long options are represented with two hyphens (--), while short options (a single hyphen followed by a letter or number) use one hyphen (-)
+
+### Find the Path to the sudo Binary (if it's installed)
+```bash
+which sudo
+```
+Note: A binary is a compiled program file. It’s the machine code that the CPU understands and executes, but it's in a format that is not human-readable.
+
+### Add a user to the sudo group
+```bash
+sudo usermod -aG sudo <username>
+```
+
+
 
 
 
