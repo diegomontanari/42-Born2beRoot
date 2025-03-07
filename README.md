@@ -27,20 +27,15 @@ By working through this project, you'll:
 No prior experience? No problem! *Born to be Root* is designed to be beginner-friendly, guiding you step by step as you explore the power of Linux. 
 
 ## Key Points We Will Cover In This Guide 🖥️
-1. [Introduction](#introduction)
-2. [Why Start This Project?](#why-start-this-project)
-3. [Key Points We Will Cover In This Guide](#key-points-we-will-cover-in-this-guide)
-4. [Understanding Virtual Machines](#1-understanding-virtual-machines)
-5. [Debian vs CentOS and Rocky Linux](#2-debian-vs-centos-and-rocky-linux)
-6. [Using VirtualBox + Configuring Your Virtual Machine (VM)](#3-4-using-virtualbox--configuring-your-virtual-machine-vm)
-7. [Understanding Partitions](#5-understanding-partitions)
-8. [Commands you need to learn!](#9-commands-you-need-to-learn)
-9. [UFW Management Commands](#ufw-management-commands)
-10. [SSH Management Commands](#ssh-management-commands)
-11. [Differences Between `apt` and `aptitude`](#differences-between-apt-and-aptitude)
-12. [What is AppArmor?](#what-is-apparmor)
-13. [What is LVM?](#what-is-lvm)
-14. [Sources](#sources)
+1. [Understanding Virtual Machines](#1-understanding-virtual-machines)
+2. [Debian vs CentOS and Rocky Linux](#2-debian-vs-centos-and-rocky-linux)
+3. [Using VirtualBox + Configuring Your Virtual Machine (VM)](#3-4-using-virtualbox--configuring-your-virtual-machine-vm)
+4. [Understanding Partitions](#4-understanding-partitions)
+5. [Commands you need to learn!](#5-commands-you-need-to-learn)
+6. [Differences Between `apt` and `aptitude`](#differences-between-apt-and-aptitude)
+7. [What is AppArmor?](#what-is-apparmor)
+8. [What is LVM?](#what-is-lvm)
+9. [Sources](#sources)
 
 # Let's start! 🚀
 
