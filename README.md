@@ -444,6 +444,30 @@ sudo systemctl restart ssh
 
 
 
+## Differences Between `apt` and `aptitude`
+
+`aptitude` provides both a command-line and a text-based interface for package management, whereas `apt` is strictly command-line. `aptitude` is not installed by default and must be added using `apt`.
+
+### Key Differences:
+- `aptitude` includes a visual interface, while `apt` is purely command-line.
+- When encountering package conflicts, `aptitude` suggests resolutions, while `apt` does not.
+- `aptitude` can fetch and display Debian changelogs.
+- `apt` requires more Linux package management knowledge, while `aptitude` is more user-friendly due to its interface.
+
+## What is AppArmor?
+AppArmor (Application Armor) is a Linux security module that restricts program capabilities using per-program profiles.
+
+Restricting program capabilities is essential for security, as it minimizes the potential damage malicious or compromised applications can cause.
+
+For example, a web browser should only have access to the internet and user-downloadable files, but not system-critical files or processes. Without restrictions, a compromised browser could modify system configurations or access sensitive data.
+
+Doesn't this happen automatically?
+
+Not always. Some operating systems implement default restrictions, but many applications have broader permissions than necessary. AppArmor allows you to define specific rules to limit a program's actions. For example, on a Linux distribution without AppArmor active, a browser could access sensitive files if an exploit compromises it. With AppArmor, however, you can prevent the browser from accessing system folders or executing dangerous commands in advance.
+
+## What is LVM?
+LVM (Logical Volume Manager) allows flexible management of logical volumes, enabling dynamic resizing and efficient storage allocation.
+
 
 
 
