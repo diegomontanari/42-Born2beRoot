@@ -275,6 +275,12 @@ Note: A binary is a compiled program file. It’s the machine code that the CPU 
 ```bash
 sudo usermod -aG sudo <username>
 ```
+Note: 
+The usermod command is used to modify a user’s properties on a Linux system. Specifically:
+The -a option stands for "append" and ensures that the user is added to the specified group without being removed from any existing groups.
+The -G option is used to specify the groups that the user should be part of.
+So, the command sudo usermod -aG <groupname> <username> adds the specified user to the <groupname> group, keeping the user's membership in other groups intact.
+
 ### Explain and show the usage of sudo with examples
 ```bash
 sudo ls /root # Access a directory restricted to administrators
@@ -285,6 +291,10 @@ sudo reboot # Restart the system
 ```bash
 ls -l /var/log/sudo/
 ```
+Note: 
+/var is a directory in the Linux filesystem that stands for "variable". It is used to store files that are expected to change in size or content over time.
+/var/log is a directory that stores system log files. These log files contain information about system events, user activities, and error messages. The log files help administrators troubleshoot and monitor the system's performance.
+
 ### Check if the file contains the history of commands used with sudo
 ```bash
 cat /var/log/sudo/sudo.log # cat stands for "concatenate" and it's used to display the contents of a file
