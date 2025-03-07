@@ -30,19 +30,17 @@ By working through this project, you'll:
 No prior experience? No problem! *Born to be Root* is designed to be beginner-friendly, guiding you step by step as you explore the power of Linux. 
 
 ## Key Points We Will Cover In This Guide 🖥️
-1. [Why Start This Project?](#why-start-this-project)
-2. [Key Points We Will Cover In This Guide](#key-points-we-will-cover-in-this-guide)
-3. [Understanding Virtual Machines](#understanding-virtual-machines)
-4. [Debian vs CentOS and Rocky Linux](#debian-vs-centos-and-rocky-linux)
-5. [Using VirtualBox + Configuring Your Virtual Machine (VM)](#using-virtualbox--configuring-your-virtual-machine-vm)
-6. [Understanding Partitions](#understanding-partitions)
-7. [Commands You Need to Learn](#commands-you-need-to-learn)
-8. [Managing UFW](#managing-ufw)
-9. [Managing SSH](#managing-ssh)
-10. [Differences Between apt and aptitude](#differences-between-apt-and-aptitude)
-11. [What is AppArmor](#what-is-apparmor)
-12. [What is LVM](#what-is-lvm)
-13. [Sources](#sources)
+1. [Understanding Virtual Machines](#understanding-virtual-machines)
+2. [Debian vs CentOS and Rocky Linux](#debian-vs-centos-and-rocky-linux)
+3. [Using VirtualBox + Configuring Your Virtual Machine (VM)](#using-virtualbox--configuring-your-virtual-machine-vm)
+4. [Understanding Partitions](#understanding-partitions)
+5. [Commands You Need to Learn](#commands-you-need-to-learn)
+6. [Managing UFW](#managing-ufw)
+7. [Managing SSH](#managing-ssh)
+8. [Differences Between apt and aptitude](#differences-between-apt-and-aptitude)
+9. [What is AppArmor](#what-is-apparmor)
+10. [What is LVM](#what-is-lvm)
+11. [Sources](#sources)
 
 
 
