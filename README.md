@@ -32,16 +32,10 @@ No prior experience? No problem! *Born to be Root* is designed to be beginner-fr
 3. [Using VirtualBox + Configuring Your Virtual Machine (VM)](#using-virtualbox--configuring-your-virtual-machine-vm)
 4. [Understanding Partitions](#understanding-partitions)
 5. [Commands You Need to Learn](#commands-you-need-to-learn)
-6. [Managing UFW](#managing-ufw)
-7. [Managing SSH](#managing-ssh)
-8. [Differences Between apt and aptitude](#differences-between-apt-and-aptitude)
-9. [What is AppArmor](#what-is-apparmor)
-10. [What is LVM](#what-is-lvm)
-11. [Sources](#sources)
-
-
-
-
+6. [Differences Between apt and aptitude](#differences-between-apt-and-aptitude)
+7. [What is AppArmor](#what-is-apparmor)
+8. [What is LVM](#what-is-lvm)
+9. [Sources](#sources)
 
 # Let's start! 🚀
 
@@ -113,7 +107,7 @@ We need to choose between **Rocky Linux** and **Debian** for our virtual machine
 
 In summary, **Rocky Linux** is ideal for enterprise-level applications, while **Debian** is a better choice for beginners and general-purpose use, offering a more flexible and user-friendly experience.
 
-## 3-4) Using VirtualBox + Configuring Your Virtual Machine (VM)
+## 3) Using VirtualBox + Configuring Your Virtual Machine (VM)
 
 VirtualBox is open-source software that allows you to create and manage virtual machines on your computer. It supports a wide range of operating systems and is a popular choice for personal and professional use.
 - Download and Install VirtualBox
@@ -125,7 +119,7 @@ VirtualBox is open-source software that allows you to create and manage virtual 
 
 ![virtualize-virtualize-everything](https://github.com/user-attachments/assets/cf8d02c8-68eb-4327-b734-7531975a4f10)
 
-## 5) Understanding Partitions
+## 4) Understanding Partitions
 
 A partition is a logical subdivision of a physical disk. Imagine your hard drive as one big room: if you want to organize it better, you can divide it with walls into multiple rooms (partitions). Each partition can be used for different purposes (operating system, data, swap, etc.).
 
@@ -175,7 +169,7 @@ Let's say you have a 100GB disk. You can divide it as follows:
 
 
 
-## 9) Commands you need to learn!
+## 5) Commands you need to learn!
 
 Let’s complete this guide with a list of essential commands that you will need to successfully complete the project.
 
@@ -436,9 +430,14 @@ Save and restart SSH:
 sudo systemctl restart ssh
 ```
 
+### Initiate an SSH connection to localhost on a custom port
+```bash
+ssh dmontana@localhost -p 4241  # ssh (Secure Shell) is used to securely log into a remote machine
+```
+Note: The localhost address (127.0.0.1) means the connection is being made to the same machine. The -p flag specifies a non-default SSH port (4241 instead of the default 22). This is useful when an SSH server is configured to listen on a different port for security reasons.
 
 
-## Differences Between `apt` and `aptitude`
+## 6) Differences Between `apt` and `aptitude`
 
 `aptitude` provides both a command-line and a text-based interface for package management, whereas `apt` is strictly command-line. `aptitude` is not installed by default and must be added using `apt`.
 
@@ -448,7 +447,7 @@ sudo systemctl restart ssh
 - `aptitude` can fetch and display Debian changelogs.
 - `apt` requires more Linux package management knowledge, while `aptitude` is more user-friendly due to its interface.
 
-## What is AppArmor?
+## 7) What is AppArmor?
 AppArmor (Application Armor) is a Linux security module that restricts program capabilities using per-program profiles.
 
 Restricting program capabilities is essential for security, as it minimizes the potential damage malicious or compromised applications can cause.
@@ -459,7 +458,7 @@ Doesn't this happen automatically?
 
 Not always. Some operating systems implement default restrictions, but many applications have broader permissions than necessary. AppArmor allows you to define specific rules to limit a program's actions. For example, on a Linux distribution without AppArmor active, a browser could access sensitive files if an exploit compromises it. With AppArmor, however, you can prevent the browser from accessing system folders or executing dangerous commands in advance.
 
-## What is LVM?
+## 8) What is LVM?
 LVM (Logical Volume Manager) allows flexible management of logical volumes, enabling dynamic resizing and efficient storage allocation.
 
 
@@ -469,11 +468,6 @@ LVM (Logical Volume Manager) allows flexible management of logical volumes, enab
 
 
 
-### Initiate an SSH connection to localhost on a custom port
-```bash
-ssh dmontana@localhost -p 4241  # ssh (Secure Shell) is used to securely log into a remote machine
-```
-Note: The localhost address (127.0.0.1) means the connection is being made to the same machine. The -p flag specifies a non-default SSH port (4241 instead of the default 22). This is useful when an SSH server is configured to listen on a different port for security reasons.
 
 
 
@@ -493,8 +487,7 @@ Note: The localhost address (127.0.0.1) means the connection is being made to th
 
 
 
-
-## Sources:
+## 9) Sources:
 https://github.com/f-corvaro/42.common_core/tree/main/01-born2beroot
 https://github.com/vhacman/Born2beroot
 https://iq.opengenus.org/virtualization/
