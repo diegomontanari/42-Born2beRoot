@@ -29,13 +29,13 @@ No prior experience? No problem! *Born to be Root* is designed to be beginner-fr
 ## Key Points We Will Cover In This Guide 🖥️
 1. [Understanding Virtual Machines](#1-understanding-virtual-machines)
 2. [Debian vs CentOS and Rocky Linux](#2-debian-vs-centos-and-rocky-linux)
-3. [Using VirtualBox + Configuring Your Virtual Machine (VM)](#3-4-using-virtualbox--configuring-your-virtual-machine-vm)
-4. [Understanding Partitions](#5-understanding-partitions)
-5. [Commands you need to learn!](#9-commands-you-need-to-learn)
-6. [Differences Between `apt` and `aptitude`](#differences-between-apt-and-aptitude)
-7. [What is AppArmor?](#what-is-apparmor)
-8. [What is LVM?](#what-is-lvm)
-9. [Sources](#sources)
+3. [Using VirtualBox and Configuring Your Virtual Machine (VM)](https://github.com/diegomontanari/42-Born2beRoot/blob/main/README.md#3-using-virtualbox--configuring-your-virtual-machine-vm)
+4. [Understanding Partitions](https://github.com/diegomontanari/42-Born2beRoot/blob/main/README.md#4-understanding-partitions)
+5. [Commands You Need to Learn](https://github.com/diegomontanari/42-Born2beRoot/blob/main/README.md#5-commands-you-need-to-learn)
+6. [Differences Between apt and aptitude](https://github.com/diegomontanari/42-Born2beRoot/blob/main/README.md#6-differences-between-apt-and-aptitude)
+7. [What is AppArmor?](https://github.com/diegomontanari/42-Born2beRoot/blob/main/README.md#7-what-is-apparmor)
+8. [What is LVM?](https://github.com/diegomontanari/42-Born2beRoot/blob/main/README.md#8-what-is-lvm)
+9. [Sources](https://github.com/diegomontanari/42-Born2beRoot/blob/main/README.md#9-sources)
 
 # Let's start! 🚀
 
