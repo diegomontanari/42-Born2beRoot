@@ -216,8 +216,8 @@ cat /etc/group
 ```bash
 lsblk
 ```
-
-Note: The command is named `lsblk` because it lists all block devices (such as hard drives and partitions).
+ 
+Note: The command is named `lsblk` (stands "list block") and it is used to list all block devices in the system, such as hard drives, SSDs, and their partitions.
 
 ### Create a new user
 ```bash
