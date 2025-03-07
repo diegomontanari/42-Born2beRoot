@@ -476,7 +476,7 @@ Not always. Some operating systems implement default restrictions, but many appl
 ## 8) What is LVM?
 LVM (Logical Volume Manager) allows flexible management of logical volumes, enabling dynamic resizing and efficient storage allocation.
 
-## 9) Sources:
+## 10) Sources:
 https://github.com/f-corvaro/42.common_core/tree/main/01-born2beroot  
 https://github.com/vhacman/Born2beroot  
 https://iq.opengenus.org/virtualization/  
