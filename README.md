@@ -190,6 +190,10 @@ sudo systemctl status ssh
 ```bash
 cat /etc/os-release
 ```
+Note:
+cat: It stands for "concatenate" and is used to display the contents of a file.
+/etc: This is a directory (folder) that holds system configuration files in Linux-based systems.
+os-release: This file contains information about the operating system, such as its name, version, and other details about the distribution.
 
 ### View information about users
 
