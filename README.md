@@ -306,8 +306,156 @@ catg /var/log/sudo/sudo.log
 ```
 ## UFW Management Commands
 
+UFW (Uncomplicated Firewall) is a user-friendly front-end for managing iptables, designed to simplify firewall configuration in Linux systems. It allows users to manage network traffic rules easily by enabling or disabling ports and protocols.
+
+UFW is typically installed by default on Ubuntu and other Debian-based systems, but if it's not installed, it can be manually installed.
+
+### Check if UFW is Installed
+```bash
+sudo ufw status
+```
+If UFW is not installed, install it with:
+```bash
+sudo apt update && sudo apt install ufw -y
+```
+*Note: The `-y` flag automatically answers 'yes' to any prompts during the installation process, allowing the command to proceed without user intervention.*
+
+### Check if UFW is Enabled
+```bash
+sudo ufw status
+```
+If it is inactive, enable it with:
+```bash
+sudo ufw enable
+```
+
+### List Active UFW Rules
+```bash
+sudo ufw status numbered
+```
+This command displays all active firewall rules in a numbered format.
+
+### Add a Rule to Allow Port 8080
+```bash
+sudo ufw allow 8080
+```
+
+### Verify the Rule for Port 8080
+```bash
+sudo ufw status numbered
+```
+This command ensures the rule was added correctly.
+
+### Delete the Rule for Port 8080
+First, find the rule number:
+```bash
+sudo ufw status numbered
+```
+Then delete the rule using its number:
+```bash
+sudo ufw delete <rule_number>
+```
+Replace `<rule_number>` with the correct number from the listed rules.
+
+---
+
+## SSH Management Commands
+
+SSH (Secure Shell) is a protocol that allows secure remote access to systems over an encrypted connection. It is commonly used for remote administration and file transfers between systems.
+
+### Check if SSH is Installed
+```bash
+dpkg -l | grep openssh-server
+```
+*Note: `dpkg` is the package management system for Debian-based distributions, and `grep` is a command-line tool used to search for specific text within files or outputs. Here, `dpkg -l` lists installed packages, and `grep openssh-server` filters the list to check if the OpenSSH server is installed.*
+
+If SSH is not installed, install it with:
+```bash
+sudo apt update && sudo apt install openssh-server -y
+```
+
+### Check if SSH is Running
+```bash
+sudo systemctl status ssh
+```
+If SSH is not active, start the service with:
+```bash
+sudo systemctl start ssh
+```
+
+### Verify SSH Port Configuration
+```bash
+sudo cat /etc/ssh/sshd_config | grep Port
+```
+By default, SSH runs on port 22. To change it to port 4242, edit the configuration file:
+```bash
+sudo vim /etc/ssh/sshd_config
+```
+Find the line:
+```
+Port 22
+```
+Change it to:
+```
+Port 4242
+```
+Save and exit (`ESC`, `:wq`, `Enter`). Restart SSH to apply changes:
+```bash
+sudo systemctl restart ssh
+```
+
+### Create a New User for SSH Access
+```bash
+sudo adduser new_user
+```
+
+### Log in via SSH with the New User
+```bash
+ssh new_user@localhost -p 4242
+```
+
+### Set Up SSH Key Authentication
+Generate an SSH key pair:
+```bash
+ssh-keygen -t rsa -b 4096
+```
+Copy the key to the server:
+```bash
+ssh-copy-id -p 4242 new_user@localhost
+```
+
+### Ensure Root Login is Disabled
+Check the configuration:
+```bash
+sudo cat /etc/ssh/sshd_config | grep PermitRootLogin
+```
+If necessary, edit the file:
+```bash
+sudo vim /etc/ssh/sshd_config
+```
+Ensure the line is set to:
+```
+PermitRootLogin no
+```
+Save and restart SSH:
+```bash
+sudo systemctl restart ssh
+```
 
 
+
+
+
+
+
+
+
+
+### Initiate an SSH connection to localhost on a custom port
+```bash
+ssh dmontana@localhost -p 4241  # ssh (Secure Shell) is used to securely log into a remote machine
+```
+Note: The localhost address (127.0.0.1) means the connection is being made to the same machine. The -p flag specifies a non-default SSH port (4241 instead of the default 22). This is useful when an SSH server is configured to listen on a different port for security reasons.
 
 
 
