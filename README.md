@@ -8,9 +8,6 @@ For a full guide, I recommend checking out the repository by fcorvaro (I'll leav
 
 Let's get started!
 
-![virtualize-virtualize-everything](https://github.com/user-attachments/assets/cf8d02c8-68eb-4327-b734-7531975a4f10)
-
-
 # Introduction
 
 Welcome to *Born to be Root* – a beginner-friendly guide to mastering Linux system administration. Whether you're just starting out or looking to sharpen your skills, this repository will help you navigate the Linux environment with confidence.  
@@ -126,7 +123,7 @@ VirtualBox is open-source software that allows you to create and manage virtual 
 
 *For more detailed instructions on this part, refer to the guide by fcorvaro.*
 
-
+![virtualize-virtualize-everything](https://github.com/user-attachments/assets/cf8d02c8-68eb-4327-b734-7531975a4f10)
 
 ## 5) Understanding Partitions
 
