@@ -35,8 +35,9 @@ No prior experience? No problem! *Born to be Root* is designed to be beginner-fr
 6. [Differences Between apt and aptitude](https://github.com/diegomontanari/42-Born2beRoot/blob/main/README.md#6-differences-between-apt-and-aptitude)
 7. [What is AppArmor?](https://github.com/diegomontanari/42-Born2beRoot/blob/main/README.md#7-what-is-apparmor)
 8. [What is LVM?](https://github.com/diegomontanari/42-Born2beRoot/blob/main/README.md#8-what-is-lvm)
-9. What is cron aggiungere
-10. [Sources](https://github.com/diegomontanari/42-Born2beRoot/blob/main/README.md#9-sources)
+9. What is cron aggiungere e crontabSELlinux e DNF (Dandified Yum)
+10. 
+11. [Sources](https://github.com/diegomontanari/42-Born2beRoot/blob/main/README.md#9-sources)
 
 # Let's start! 🚀
 
