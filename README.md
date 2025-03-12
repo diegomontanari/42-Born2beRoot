@@ -179,7 +179,7 @@ Let’s complete this guide with a list of essential commands that you will need
 
 ### Check that the UFW service is started
 ```bash
-sudo systemctl status ufw
+sudo ufw status
 ```
 ### Check that the SSH service is started
 
@@ -187,6 +187,12 @@ To check if SSH is enabled and running:
 ```bash
 sudo systemctl status ssh
 ```
+Note: **ssh** is a service managed by **systemd**, while **ufw** is **independent**. 
+This means that:
+- If a service is managed by systemd: sudo systemctl  status <service>
+- If a service is independent: sudo <service> status
+Basically, if the service is independent, its name comes before the word "status"; if it is managed by systemd, the name comes after "systemctl status".
+
 
 ### Check what OS is used
 ```bash
