@@ -348,10 +348,30 @@ You should see the executed command logged in the specified file.
 
 **Note:** Ensure that the `/var/log/sudo/` directory exists and has the appropriate permissions for logging.
 
+### Difference Between System Logs (Audit) and Sudo Logs
+
+When we talk about system logs, there are two main methods for viewing information related to commands executed with `sudo`:
+
+1. **System Logs (Audit) via `journalctl`:**
+   - **`journalctl`:** Logs system-wide events, including `sudo` sessions, errors, and other related activities.
+   - To view the logs related to `sudo`, you can use:
+     ```bash
+     sudo journalctl | grep sudo
+     ```
+   - This command will show the system logs containing the word "sudo," including details about the user who executed the command, the time, and the type of command.
+
+2. **Sudo Logs (Specific Log File) via `/var/log/sudo/sudo.log`:**
+   - **`/var/log/sudo/sudo.log`:** Logs only the specific `sudo` commands executed and their output, based on the configuration in the `sudoers` file.
+   - To view the log, you can use:
+     ```bash
+     sudo cat /var/log/sudo/sudo.log
+     ```
+   - This command will show a linear log of the commands executed via `sudo` (if correctly configured), and will include details like the command run and the user who initiated the session.
+
 ### Run a command with sudo and verify that the log is updated
 ```bash
 sudo ls /root
-catg /var/log/sudo/sudo.log
+cat /var/log/sudo/sudo.log
 ```
 ## UFW Management Commands
 
