@@ -309,6 +309,44 @@ cat /var/log/sudo/sudo.log # cat stands for "concatenate" and it's used to displ
 ```
 Note: the .log extension is only a naming convention to indicate that the file cotains log data. Why? Because Linux doesn't rely on file extensions like Windows does. You could name the file anything (sudo_log , sudo.txt , sudo-data) and it would still function the same way as long as the system is configured to write logs to it.
 
+## Enable Logging for Sudo (if /var/log/sudo/sudo.log does not exist)
+
+To enable logging for sudo commands, you need to configure the sudoers file and specify the location where the logs should be stored.
+
+### 1. Edit the sudoers file
+Use the `visudo` command to safely edit the sudoers file. This command prevents syntax errors.
+
+```bash
+sudo visudo
+```
+
+### Add the logging configuration
+Locate the Defaults section in the sudoers file and add the following lines to enable logging:
+
+```bash
+Defaults    log_output
+Defaults    logfile="/var/log/sudo/sudo.log"
+```
+
+- `log_output`: Enables logging of commands executed using sudo.
+- `logfile`: Specifies the path to the log file where sudo commands will be recorded.
+
+### Save and exit
+Save the changes and exit the editor. If using `visudo`, press `ESC`, type `:wq`, and press `Enter`.
+
+### 2. Verify the logging configuration
+To ensure that logging is enabled, run a sudo command and check the log file:
+
+```bash
+sudo ls /root
+cat /var/log/sudo/sudo.log
+```
+
+You should see the executed command logged in the specified file.
+
+**Note:** Ensure that the `/var/log/sudo/` directory exists and has the appropriate permissions for logging.
+
+
 ### Run a command with sudo and verify that the log is updated
 ```bash
 sudo ls /root
