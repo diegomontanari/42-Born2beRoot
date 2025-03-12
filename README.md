@@ -289,6 +289,15 @@ The -a option stands for "append" and ensures that the user is added to the spec
 The -G option is used to specify the groups that the user should be part of.
 So, the command sudo usermod -aG <groupname> <username> adds the specified user to the <groupname> group, keeping the user's membership in other groups intact.
 
+### Group Verification and Info
+To verify if the group exists, you can use the command:
+
+```bash
+getent group Users42
+```
+If the group exists, this command will return information about it.
+
+
 ### Explain and show the usage of sudo with examples
 ```bash
 sudo ls /root # Access a directory restricted to administrators
@@ -373,6 +382,7 @@ When we talk about system logs, there are two main methods for viewing informati
 sudo ls /root
 cat /var/log/sudo/sudo.log
 ```
+
 ## UFW Management Commands
 
 UFW (Uncomplicated Firewall) is a user-friendly front-end for managing iptables, designed to simplify firewall configuration in Linux systems. It allows users to manage network traffic rules easily by enabling or disabling ports and protocols.
