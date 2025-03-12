@@ -189,9 +189,9 @@ sudo systemctl status ssh
 ```
 Note: **ssh** is a service managed by **systemd**, while **ufw** is **independent**. 
 This means that:
-- If a service is managed by systemd: sudo systemctl  status <service>
-- If a service is independent: sudo <service> status
-Basically, if the service is independent, its name comes before the word "status"; if it is managed by systemd, the name comes after "systemctl status".
+- **If a service is managed by systemd**: sudo systemctl  status <service>
+- **If a service is independent**: sudo <service> status
+Basically, **if the service is independent, its name comes before** the word "status"; **if it is managed by systemd, the name comes after** "systemctl status".
 
 
 ### Check what OS is used
