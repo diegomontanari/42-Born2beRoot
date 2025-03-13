@@ -704,6 +704,68 @@ Not always. Some operating systems implement default restrictions, but many appl
 ## 8) What is LVM?
 LVM (Logical Volume Manager) allows flexible management of logical volumes, enabling dynamic resizing and efficient storage allocation.
 
+## Understanding cron and crontab
+
+**Cron** and **Crontab** are tools that allow you to schedule tasks to run automatically on a Linux or Unix-based operating system.
+
+1. **Cron** is a program that runs in the background and handles executing tasks at specified intervals, like running a script every day at 7 AM.
+
+2. **Crontab** is the file or command you use to tell Cron what tasks to run and when to run them. It's like a to-do list where you specify:
+   * **What** should be done (e.g., running a command or script).
+   * **When** it should be done (e.g., every day, every hour, every Monday, etc.).
+
+The tricky part is writing the correct syntax, which consists of 5 fields indicating:
+* **Minutes** (0-59)
+* **Hours** (0-23)
+* **Day of the month** (1-31)
+* **Month** (1-12)
+* **Day of the week** (0-6, where 0 is Sunday)
+
+Example:
+Let's say you want to run a script every day at 7 AM. The line in your **crontab** would look like this:
+
+```
+0 7 * * * /path/to/your/script.sh
+```
+
+This means:
+* `0` minutes
+* `7` hours
+* `*` every day of the month
+* `*` every month
+* `*` every day of the week
+
+Basically, every day at 7:00 AM, Cron will execute the script you specified.
+
+To use **crontab**, you need to:
+* **Open the crontab file** with the command `crontab -e`.
+* **Add your line** with the schedule you want.
+* Save and exit.
+
+Cron will take care of the rest!
+
+## Scheduling Tasks for Multiple Days Per Week
+
+Let's say you need to run a database backup script every Monday, Wednesday, and Friday at 9:30 PM. Here's how you would set up the crontab entry:
+
+```
+30 21 * * 1,3,5 /path/to/database-backup.sh
+```
+
+This command breaks down as follows:
+* `30` minutes (30 minutes past the hour)
+* `21` hours (9 PM in 24-hour format)
+* `*` every day of the month
+* `*` every month
+* `1,3,5` only on Monday (1), Wednesday (3), and Friday (5)
+
+When you use commas in any field, it creates a list of values for which the command should run. You could similarly schedule tasks for specific months (e.g., `1,6,12` for January, June, and December) or specific days of the month.
+
+Remember that whenever your schedule needs to accommodate multiple specific times or dates, using commas to separate the values is the way to go. This makes cron incredibly flexible for creating complex scheduling patterns for your automated tasks.
+
+
+
+
 ## 10) Sources:
 https://github.com/f-corvaro/42.common_core/tree/main/01-born2beroot  
 https://github.com/vhacman/Born2beroot  
