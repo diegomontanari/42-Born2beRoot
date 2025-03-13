@@ -551,7 +551,6 @@ In short:
 - ssh_config: for setting up how your computer connects to others.
 - sshd_config: for setting up how others connect to your computer.
 
-## Setting up the sudo policies
 # Linux Security Configuration Guide
 
 ## Sudo Configuration
