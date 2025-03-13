@@ -704,7 +704,7 @@ Not always. Some operating systems implement default restrictions, but many appl
 ## 8) What is LVM?
 LVM (Logical Volume Manager) allows flexible management of logical volumes, enabling dynamic resizing and efficient storage allocation.
 
-## Understanding cron and crontab
+## 9) Understanding cron and crontab
 
 **Cron** and **Crontab** are tools that allow you to schedule tasks to run automatically on a Linux or Unix-based operating system.
 
