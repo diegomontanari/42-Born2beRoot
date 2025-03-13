@@ -326,6 +326,14 @@ Note: the .log extension is only a naming convention to indicate that the file c
 
 To enable logging for sudo commands, you need to configure the sudoers file and specify the location where the logs should be stored.
 
+### Creating the Logging Directory
+
+Create a dedicated directory in `/var/log/` to log each sudo command's input and output:
+
+```bash
+sudo mkdir /var/log/sudo
+```
+
 ### Edit the sudoers file
 
 Use the `visudo` command to safely edit the sudoers file. This command prevents syntax errors.
@@ -568,16 +576,6 @@ sudo touch /etc/sudoers.d/sudo_config
 ```
 
 This file will contain all the custom sudo policies we want to implement for enhanced security.
-
-### Creating the Logging Directory
-
-Create a dedicated directory in `/var/log/` to log each sudo command's input and output:
-
-```bash
-sudo mkdir /var/log/sudo
-```
-
-This directory will store detailed logs of all sudo command executions, helping with security auditing and troubleshooting.
 
 ### Editing the Sudo Configuration File
 
