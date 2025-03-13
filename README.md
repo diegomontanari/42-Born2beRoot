@@ -529,6 +529,28 @@ ssh dmontana@localhost -p 4241  # ssh (Secure Shell) is used to securely log int
 ```
 Note: The localhost address (127.0.0.1) means the connection is being made to the same machine. The -p flag specifies a non-default SSH port (4241 instead of the default 22). This is useful when an SSH server is configured to listen on a different port for security reasons.
 
+## Difference between the ssh_config and sshd_config files in SSH configuration:
+
+- ssh_config: This file is the **client-side configuration file for SSH**. It is used to configure settings for outgoing SSH connections from a client to a server. The settings here affect how the SSH client behaves when it tries to connect to a remote server (e.g., which SSH protocol version to use, whether to enable compression, default user, etc.). It is usually found in /etc/ssh/ssh_config or ~/.ssh/config.
+
+- sshd_config: This file is the **server-side configuration file for SSH**. It is used to configure settings on the SSH server that listens for incoming SSH connections. The settings here affect how the server handles client connections (e.g., which authentication methods are allowed, which port to listen on, access control, etc.). It is usually located in /etc/ssh/sshd_config.
+
+To summarize:
+
+ssh_config: Configures client-side behavior.
+sshd_config: Configures server-side behavior.
+
+Simpler explanation:
+
+- ssh_config: This is the configuration file for the SSH client. It controls **how your computer connects to other remote computers via SSH** (like which settings to use when you connect).
+
+- sshd_config: This is the configuration file for the SSH server. It controls **how the remote computer allows incoming SSH connections** (like which methods it accepts for login).
+
+In short:
+
+- ssh_config: for setting up how your computer connects to others.
+- sshd_config: for setting up how others connect to your computer.
+
 
 ## 6) Differences Between `apt` and `aptitude`
 
