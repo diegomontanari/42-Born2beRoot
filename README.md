@@ -478,6 +478,10 @@ sudo systemctl start ssh
 ```bash
 sudo cat /etc/ssh/sshd_config | grep Port
 ```
+Note: we need to modify 2 files: 1) /etc/ssh/sshd_config , which is the server-side configuration file for SSH (here we need to change both the port and set PermitRootLogin no) and /etc/ssh/ssh_config , the client-side configuration file for SSH (here we just need to change the port)
+
+
+
 By default, SSH runs on port 22. To change it to port 4242, edit the configuration file:
 ```bash
 sudo vim /etc/ssh/sshd_config
