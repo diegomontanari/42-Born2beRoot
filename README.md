@@ -551,6 +551,131 @@ In short:
 - ssh_config: for setting up how your computer connects to others.
 - sshd_config: for setting up how others connect to your computer.
 
+## Setting up the sudo policies
+# Linux Security Configuration Guide
+
+## Sudo Configuration
+
+### Creating the Sudo Configuration File
+
+Create a file in the `/etc/sudoers.d/` directory to store the sudo policy:
+
+```bash
+sudo touch /etc/sudoers.d/sudo_config
+```
+
+This file will contain all the custom sudo policies we want to implement for enhanced security.
+
+### Creating the Logging Directory
+
+Create a dedicated directory in `/var/log/` to log each sudo command's input and output:
+
+```bash
+sudo mkdir /var/log/sudo
+```
+
+This directory will store detailed logs of all sudo command executions, helping with security auditing and troubleshooting.
+
+### Editing the Sudo Configuration File
+
+Open the file created in the first step:
+
+```bash
+sudo vim /etc/sudoers.d/sudo_config
+```
+
+### Adding Sudo Policies
+
+Write the following lines into the file:
+
+```
+Defaults passwd_tries=3
+Defaults badpass_message="Custom error message"
+Defaults logfile="/var/log/sudo/sudo_config"
+Defaults log_input, log_output
+Defaults iolog_dir="/var/log/sudo"
+Defaults requiretty
+Defaults secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin"
+```
+
+Each of these settings serves a specific security purpose:
+
+- `passwd_tries=3`: Limits the total attempts allowed for entering the sudo password
+- `badpass_message="Custom error message"`: Displays a custom message when an incorrect password is entered
+- `logfile="/var/log/sudo/sudo_config"`: Specifies the path where sudo logs will be stored
+- `log_input, log_output`: Enables logging of both command input and output
+- `iolog_dir="/var/log/sudo"`: Defines where input/output logs will be stored
+- `requiretty`: Enhances security by requiring a TTY for sudo execution
+- `secure_path`: Lists directories included in the secure path for sudo operations
+
+## Password Policy Configuration
+
+### Editing the login.defs File
+
+Open the login.defs file for editing:
+
+```bash
+sudo vim /etc/login.defs
+```
+
+### Setting the Password Parameters
+
+Update the following parameters in the file:
+
+```
+# Change from
+PASS_MAX_DAYS 99999
+# To
+PASS_MAX_DAYS 30
+
+# Change from
+PASS_MIN_DAYS 0
+# To
+PASS_MIN_DAYS 2
+```
+
+These parameters control password aging:
+
+- `PASS_MAX_DAYS`: Maximum number of days until password expiration
+- `PASS_MIN_DAYS`: Minimum number of days before a password can be changed
+- `PASS_WARN_AGE`: Number of days before password expiration when warnings begin
+
+### Installing the libpam-pwquality Package
+
+Install the package that will enforce password quality:
+
+```bash
+sudo apt install libpam-pwquality
+```
+
+Confirm the installation when prompted.
+
+### Editing the common-password File
+
+Open the common-password file for editing:
+
+```bash
+sudo vim /etc/pam.d/common-password
+```
+
+### Updating Password Quality Settings
+
+Find the line containing `retry=3` and add the following parameters immediately after it on the same line:
+
+```
+minlen=10 ucredit=-1 dcredit=-1 lcredit=-1 maxrepeat=3 reject_username difok=7 enforce_for_root
+```
+
+Each parameter enhances password security:
+
+- `minlen=10`: Requires passwords to contain at least 10 characters
+- `ucredit=-1`: Requires at least one uppercase letter
+- `dcredit=-1`: Requires at least one digit
+- `lcredit=-1`: Requires at least one lowercase letter
+- `maxrepeat=3`: Prevents the same character from repeating more than three times consecutively
+- `reject_username`: Prohibits passwords containing the username
+- `difok=7`: Requires at least seven different characters from the previous password
+- `enforce_for_root`: Applies this password policy to the root user as well
 
 ## 6) Differences Between `apt` and `aptitude`
 
