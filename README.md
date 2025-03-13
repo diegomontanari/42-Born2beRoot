@@ -516,6 +516,8 @@ Ensure the line is set to:
 ```
 PermitRootLogin no
 ```
+Note: the line PermitRootLogin no in the SSH configuration file (/etc/ssh/sshd_config) is used to disable direct root login over SSH. This is a security measure to prevent unauthorized access to the root account on a server. If someone were to compromise a regular user account and gain SSH access, they would not be able to directly escalate to root privileges unless they can successfully execute sudo or similar commands.
+
 Save and restart SSH:
 ```bash
 sudo systemctl restart ssh
